@@ -15,6 +15,7 @@
   libXext,
   wayland,
   wayland-scanner,
+  pango,
 }:
 
 stdenv.mkDerivation (finalAttrs: {
@@ -42,6 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
     libX11
     libXrandr
     wayland
+    pango
   ];
 
   preFixup = ''

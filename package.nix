@@ -26,6 +26,7 @@
   wayland,
   wayland-scanner,
   wrapperDir ? "/run/wrappers/bin",
+  pango
 }:
 
 pkgs.stdenv.mkDerivation (finalAttrs: {
@@ -61,6 +62,7 @@ pkgs.stdenv.mkDerivation (finalAttrs: {
     dbus
     wayland-scanner
     libcap
+    pango
   ];
 
   preFixup =
